@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS String Methods And Loops</h2>
+    <h4>Numbers Form 1 to 15.</h4>
+    <p id="result"></p>
+
+    <script>
+      var number = "";
+
+      for (i = 1; i < 16; i++) {
+        number = number + i + "<br>";
+      }
+
+      document.getElementById("result").innerHTML = number;
+
+      //random value is rounded of
+      document.write("The random value is " + Math.floor(Math.random() * 100));
+      document.write("<br>");
+
+      //for displaying current Date
+      var date = new Date();
+      document.write("Today's Date is " + date.getDate());
+    </script>
+  </body>
+</html>
